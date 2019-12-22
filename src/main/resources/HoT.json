@@ -1,0 +1,251 @@
+{
+   "house": {
+         "name": "House of Things",
+         "timeState": "MORNING",
+         "rooms":[
+        	{
+            	"name": "Living Room",
+            	"type": "pt.feup.ads.environment.room.Room",
+            	"hubProtocol": "pt.feup.ads.protocol.TradfriProtocol",
+            	"temperatureState": "MILD",
+            	"lightState": "LIGHTED",
+            	"motionState": "MOVELESS",
+            	"smokeState": "HAS_NOT_SMOKE",
+            	"cO2LevelState": "FRESH_AIR",
+            	"infraRedState": "NOT_DETECTED",
+            	"roomParts": [
+            		{
+            			"name": "Window Front",
+            			"type": "pt.feup.ads.environment.room.part.WindowRoomPart",
+            			"windowState": "OPEN",
+            			"devices": [
+            				{
+            					"name": "Window Blinds",
+            					"type": "pt.feup.ads.device.actuator.GenericActuator",
+            					"protocol": "pt.feup.ads.protocol.TradfriProtocol",
+            					"deviceState": "OFF",
+            					"sensors": [
+            						{
+        								"name": "Window Sensor",
+        								"type": "pt.feup.ads.device.sensor.WindowSensor"
+    								},
+            						{
+        								"name": "Light Sensor",
+        								"type": "pt.feup.ads.device.sensor.LightSensor"
+    								}
+            					]
+            				}
+            			]
+            		},
+            		{
+            			"name": "Door Front",
+            			"type": "pt.feup.ads.environment.room.part.DoorRoomPart",
+            			"doorState": "CLOSE",
+            			"devices": [ 
+            				{
+            					"name": "Smart Lock",
+            					"type": "pt.feup.ads.device.actuator.GenericActuator",
+            					"protocol": "pt.feup.ads.protocol.TradfriProtocol",
+            					"deviceState": "OFF",
+            					"sensors": [
+            						{
+        								"name": "Door Sensor",
+        								"type": "pt.feup.ads.device.sensor.DoorSensor"
+    								}
+            					]
+            				}
+            			]
+            		}
+            	],
+            	"devices": [
+            		{
+            			"name": "Lamp",
+            			"type": "pt.feup.ads.device.actuator.GenericActuator",
+            			"protocol": "pt.feup.ads.protocol.TradfriProtocol",
+            			"deviceState": "OFF",
+            			"sensors": [
+            				{
+        						"name": "Motion Sensor",
+        						"type": "pt.feup.ads.device.sensor.MotionSensor"
+    						},
+            				{
+        						"name": "Light Sensor",
+        						"type": "pt.feup.ads.device.sensor.LightSensor"
+    						}
+    					]
+            		},
+            		{
+            			"name": "Air Conditioner",
+            			"type": "pt.feup.ads.device.actuator.GenericActuator",
+            			"protocol": "pt.feup.ads.protocol.TradfriProtocol",
+            			"deviceState": "OFF",
+            			"sensors": [
+            				{
+        						"name": "Temperature Sensor",
+        						"type": "pt.feup.ads.device.sensor.TemperatureSensor"
+    						}
+    					]
+            		}
+            	]
+            	
+        	},{
+            	"name": "Kitchen",
+            	"type": "pt.feup.ads.environment.room.Room",
+            	"hubProtocol": "pt.feup.ads.protocol.ZWaveProtocol",
+            	"temperatureState": "MILD",
+            	"lightState": "LIGHTED",
+            	"motionState": "MOVELESS",
+            	"smokeState": "HAS_NOT_SMOKE",
+            	"cO2LevelState": "FRESH_AIR",
+            	"infraRedState": "NOT_DETECTED",
+            	"roomParts": [
+            		{
+            			"name": "Washing Button",
+            			"type": "pt.feup.ads.environment.room.part.ButtonRoomPart",
+            			"contactState": "UNTOUCH",
+            			"devices": [ 
+            				{
+            					"name": "Washing Machine",
+            					"type": "pt.feup.ads.device.actuator.GenericActuator",
+            					"protocol": "pt.feup.ads.protocol.ZWaveProtocol",
+            					"deviceState": "OFF",
+            					"sensors": [
+            						{
+        								"name": "Contact Sensor",
+        								"type": "pt.feup.ads.device.sensor.ContactSensor"
+    								}
+            					]
+            				}
+            			]
+            		},
+					{
+            			"name": "Coffee Button",
+            			"type": "pt.feup.ads.environment.room.part.ButtonRoomPart",
+            			"contactState": "UNTOUCH",
+            			"devices": [ 
+            				{
+            					"name": "Coffee Machine",
+            					"type": "pt.feup.ads.device.actuator.GenericActuator",
+            					"protocol": "pt.feup.ads.protocol.ZWaveProtocol",
+            					"deviceState": "OFF",
+            					"sensors": [
+            						{
+        								"name": "Contact Sensor",
+        								"type": "pt.feup.ads.device.sensor.ContactSensor"
+    								}
+            					]
+            				}
+            			]
+            		}
+            	],
+            	"devices": [
+            		{
+            			"name": "Sprinkler",
+            			"type": "pt.feup.ads.device.actuator.GenericActuator",
+            			"protocol": "pt.feup.ads.protocol.ZWaveProtocol",
+            			"deviceState": "OFF",
+            			"sensors": [
+            				{
+        						"name": "Smoke Sensor",
+        						"type": "pt.feup.ads.device.sensor.SmokeSensor"
+    						}
+    					]
+            		}
+            	]
+        	},{
+            	"name": "Bedroom Suite",
+            	"type": "pt.feup.ads.environment.room.Room",
+            	"hubProtocol": "pt.feup.ads.protocol.ZigbeeProtocol",
+            	"temperatureState": "HEAT",
+            	"lightState": "DARK",
+            	"motionState": "MOVELESS",
+            	"smokeState": "HAS_NOT_SMOKE",
+            	"cO2LevelState": "LIVEABLE_AIR",
+            	"infraRedState": "NOT_DETECTED",
+            	"devices": [
+            		{
+            			"name": "Lamp",
+            			"type": "pt.feup.ads.device.actuator.GenericActuator",
+            			"protocol": "pt.feup.ads.protocol.ZigbeeProtocol",
+            			"deviceState": "OFF",
+            			"sensors": [
+            				{
+        						"name": "Motion Sensor",
+        						"type": "pt.feup.ads.device.sensor.MotionSensor"
+    						}
+    					]
+            		}
+            	]
+        	},{
+            	"name": "Bedroom Kids",
+            	"type": "pt.feup.ads.environment.room.Room",
+            	"hubProtocol": "pt.feup.ads.protocol.HueProtocol",
+            	"temperatureState": "HEAT",
+            	"lightState": "LIGHTED",
+            	"motionState": "MOVING",
+            	"smokeState": "HAS_NOT_SMOKE",
+            	"cO2LevelState": "LIVEABLE_AIR",
+            	"infraRedState": "NOT_DETECTED",
+            	"roomParts": [
+            		{
+            			"name": "Smart TV button",
+            			"type": "pt.feup.ads.environment.room.part.ButtonRoomPart",
+            			"contactState": "UNTOUCH",
+            			"devices": [
+            				{
+            					"name": "Smart TV button",
+            					"type": "pt.feup.ads.device.actuator.GenericActuator",
+            					"protocol": "pt.feup.ads.protocol.HueProtocol",
+            					"deviceState": "OFF",
+            					"sensors": [
+            						{
+        								"name": "Contact Sensor",
+        								"type": "pt.feup.ads.device.sensor.ContactSensor"
+    								}
+    							]
+            				}
+            			]
+            		}
+            	],
+            	"devices": [
+            		{
+            			"name": "Lamp",
+            			"type": "pt.feup.ads.device.actuator.GenericActuator",
+            			"protocol": "pt.feup.ads.protocol.HueProtocol",
+            			"deviceState": "OFF",
+            			"sensors": [
+            				{
+        						"name": "Motion Sensor",
+        						"type": "pt.feup.ads.device.sensor.MotionSensor"
+    						}
+    					]
+            		}
+            	]
+        	},{
+            	"name": "Bathroom",
+            	"type": "pt.feup.ads.environment.room.Room",
+            	"hubProtocol": "pt.feup.ads.protocol.HueProtocol",
+            	"temperatureState": "COLD",
+            	"lightState": "DARK",
+            	"motionState": "MOVELESS",
+            	"smokeState": "HAS_NOT_SMOKE",
+            	"cO2LevelState": "POOR_AIR",
+            	"infraRedState": "NOT_DETECTED",
+            	"devices": [
+            		{
+            			"name": "Exhaust Fan Power Outlet",
+            			"type": "pt.feup.ads.device.actuator.GenericActuator",
+            			"protocol": "pt.feup.ads.protocol.HueProtocol",
+            			"deviceState": "OFF",
+            			"sensors": [
+            				{
+        						"name": "Motion Sensor",
+        						"type": "pt.feup.ads.device.sensor.MotionSensor"
+    						}
+    					]
+            		}
+            	]
+        	}
+    	]
+    }
+}

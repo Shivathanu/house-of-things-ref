@@ -1,0 +1,9 @@
+/.DS_Store
+/archive-tmp/
+/classes/
+/generated-sources/
+/generated-test-sources/
+/maven-archiver/
+/maven-status/
+/test-classes/
+/house-of-things-1.0.jar
